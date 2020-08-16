@@ -25,12 +25,13 @@
 </svelte:head>
 
 <style>
-	p {
-		text-align: left;
-	}
 </style>
 
 <div class="about">
-	<h1>{PrismicDOM.RichText.asText(document.data.title)}</h1>
-	{@html PrismicDOM.RichText.asHtml(document.data.content)}
+	<img alt={document.data.your_profile_picture.alt} src={document.data.your_profile_picture.url}>
+	<div class="about-content">
+		<p>I am</p>
+		<h1>{PrismicDOM.RichText.asText(document.data.nom)}</h1>
+		<p>{PrismicDOM.RichText.asText(document.data.description)}</p>
+	</div>
 </div>

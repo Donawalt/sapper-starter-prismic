@@ -8,10 +8,10 @@
 	let posts = null;
 	
 	export async function preload({ params, query }) {
-		document = await Client.getSingle('blog_home');
+		document = await Client.getSingle('portfolio_home');
 		const postResponse = await Client.query(
-			Prismic.Predicates.at('document.type', 'blog_post'),
-			{ orderings: '[my.blog_post.publication_date desc]' }
+			Prismic.Predicates.at('document.type', 'portfolio_post'),
+			{ orderings: '[my.portfolio_post.publication_date desc]' }
 		)
 		posts = postResponse.results
 
@@ -50,7 +50,7 @@
 					waiting for the 'click' event -->
 			<li>
 				<a rel='prefetch' href={linkResolver(post)}>
-					{PrismicDOM.RichText.asText(post.data.title)}
+					{PrismicDOM.RichText.asText(post.data.title_of_the_project)}
 				</a>
 			</li>
 		{/each}
