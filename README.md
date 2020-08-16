@@ -1,4 +1,5 @@
 # Simple Sapper & Prismic with SCSS
+[![current release](https://img.shields.io/badge/release-v0.1-orange)](https://github.com/Donawalt/sapper-starter-prismic/releases)
 
 Content pulled from [Prismic](https://prismic.io), with SCSS Support, style remove. 
 
