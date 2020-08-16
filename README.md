@@ -1,6 +1,6 @@
-# Simple Sapper & Prismic example site 
+# Simple Sapper & Prismic with SCSS
 
-The default [Sapper](https://github.com/sveltejs/sapper) template, with content being pulled from [Prismic](https://prismic.io).
+Content pulled from [Prismic](https://prismic.io), with SCSS Support, style remove. 
 
 
 ## Getting started
